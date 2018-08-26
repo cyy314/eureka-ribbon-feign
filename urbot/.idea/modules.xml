@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/urbot.iml" filepath="$PROJECT_DIR$/urbot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/urbot-client/urbot-client.iml" filepath="$PROJECT_DIR$/urbot-client/urbot-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/urbot-device/urbot-device.iml" filepath="$PROJECT_DIR$/urbot-device/urbot-device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/urbot-server/urbot-server.iml" filepath="$PROJECT_DIR$/urbot-server/urbot-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/urbot-user/urbot-user.iml" filepath="$PROJECT_DIR$/urbot-user/urbot-user.iml" />
+    </modules>
+  </component>
+</project>
