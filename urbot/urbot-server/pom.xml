@@ -14,7 +14,7 @@
 		<groupId>com.netposa</groupId>
 		<artifactId>urbot</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
