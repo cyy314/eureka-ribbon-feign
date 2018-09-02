@@ -20,7 +20,7 @@ public interface UrbotFeignClient {
      * @return
      */
 	@GetMapping(value="/user/info")
-    //@RequestMapping(value = "/user/info",method = RequestMethod.GET)//不能与hystrix一起使用
+    //@RequestMapping(value = "/user/info",method = RequestMethod.GET)
 	//@RequestLine("GET /user/info")
     public String getUser();
 }
