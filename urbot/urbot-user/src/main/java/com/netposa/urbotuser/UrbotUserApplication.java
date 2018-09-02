@@ -83,7 +83,7 @@ public class UrbotUserApplication {
                     TomcatEmbeddedServletContainerFactory containerFactory =
                             (TomcatEmbeddedServletContainerFactory) container;
                     Connector connector = new Connector(TomcatEmbeddedServletContainerFactory.DEFAULT_PROTOCOL);
-                    connector.setPort(8080);
+                    connector.setPort(8083);
                     containerFactory.addAdditionalTomcatConnectors(connector);
                 }
 			}
