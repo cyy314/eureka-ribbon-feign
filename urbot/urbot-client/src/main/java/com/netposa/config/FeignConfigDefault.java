@@ -2,8 +2,10 @@ package com.netposa.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 import feign.Contract;
+import feign.Feign;
 import feign.RequestLine;
 
 /*
@@ -11,9 +13,9 @@ import feign.RequestLine;
  */
 @Configuration
 public class FeignConfigDefault {
-	
+
 	@Bean
-	public Contract fegContract(){
+	public Contract fegContract() {
 		return new feign.Contract.Default();
 	}
 

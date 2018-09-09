@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 @SpringBootApplication
@@ -20,6 +21,7 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
  * @author Administrator
  *
  */
+@EnableHystrixDashboard
 public class UrbotClientApplication {
 
 	/*@EnableWebSecurity
