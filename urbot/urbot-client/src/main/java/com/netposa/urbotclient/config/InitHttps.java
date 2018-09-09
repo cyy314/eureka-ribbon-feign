@@ -43,13 +43,10 @@ public class InitHttps {
 	        Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
 	        connector.setScheme("http");
 	        //Connector监听的http的端口号
-	        connector.setPort(9090);
+	        connector.setPort(8080);
 	        connector.setSecure(false);
 	        //监听到http的端口号后转向到的https的端口号
-	        connector.setRedirectPort(8763);
-	    	//设置http接口
-	    	Connector connector = new Connector(TomcatEmbeddedServletContainerFactory.DEFAULT_PROTOCOL);
-	    	connector.setPort(9091);
+	        connector.setRedirectPort(8762);
 	        return connector;
 	    }*/
 	    

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 
 @RestController
 @RequestMapping(value = "rms")
@@ -28,7 +29,11 @@ public class LoginController {
 		return null;
 	}
 
-	@HystrixCommand(fallbackMethod="getDefaultUser")
+	//默认value是THREAD单独使用隔离线程
+	@HystrixCommand(fallbackMethod="getDefaultUser",commandProperties={
+			@HystrixProperty(name="execution.isolation.strategy", value="SEMAPHORE")
+	})
+	//@HystrixCommand(fallbackMethod="getDefaultUser")
 	@GetMapping("/user")
 	public String getUser() {
 		try {
