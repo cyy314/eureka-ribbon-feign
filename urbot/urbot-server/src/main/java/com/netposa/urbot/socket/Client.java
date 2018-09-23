@@ -11,6 +11,7 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Date;
+import java.util.UUID;
 
 import io.reactivex.netty.contexts.AbstractClientContextHandler.NewContextEvent;
 
@@ -18,6 +19,7 @@ public class Client {
 
 	public static void main(String[] args) {
 		try {
+			String clientUid = UUID.randomUUID().toString();
 			Socket socket = new Socket("127.0.0.1", 12580);
 			OutputStream outputStream = socket.getOutputStream();
 			InputStream inputStream = socket.getInputStream();
@@ -31,7 +33,7 @@ public class Client {
 
 			String serverMsg = "";
 			while (true) {
-				String clientMsg = "客户端请求时间:" + new Date();
+				String clientMsg = clientUid + "客户端请求时间:" + new Date();
 				System.out.println(clientMsg);
 				/*printStream.println(clientMsg);
 				if ((serverMsg = bufferedReader.readLine()) != null) {

@@ -45,6 +45,7 @@ public class ServerThread implements Runnable {
 				System.out.println("**********************************");
 			}
 		} catch (Exception e) {
+			System.out.println("客户端连接异常");
 			e.printStackTrace();
 			try {
 				socket.close();
