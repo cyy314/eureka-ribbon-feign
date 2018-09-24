@@ -24,6 +24,7 @@
 		<module>urbot-client</module>
 		<module>urbot-user</module>
 		<module>urbot-device</module>
+		<module>urbot-zuul</module>
 	</modules>
 
 	<properties>

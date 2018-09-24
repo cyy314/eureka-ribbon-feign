@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: urbot-zuul
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Administrator
+Implementation-Vendor-Id: com.netposa
+Build-Jdk: 1.8.0_111
+Implementation-URL: http://projects.spring.io/spring-boot/urbot/urbot-
+ zuul/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
