@@ -1,5 +1,7 @@
 package com.netposa.mina;
 
+import java.util.Date;
+
 import org.apache.mina.core.service.IoHandlerAdapter;
 import org.apache.mina.core.session.IdleStatus;
 import org.apache.mina.core.session.IoSession;
@@ -28,7 +30,8 @@ public class TimeClientHandler extends IoHandlerAdapter {
 
     @Override
     public void sessionOpened(IoSession session) throws Exception {
-    	session.write(session);
+    	session.write(message);
+		logger.info("send message:{}",message);
     }
 
     @Override
@@ -46,6 +49,8 @@ public class TimeClientHandler extends IoHandlerAdapter {
 
     @Override
     public void messageReceived(IoSession session, Object message) throws Exception {
+    	String receMsg = message.toString();
+		logger.info("receive message:{}",receMsg);		
     }
 
     @Override

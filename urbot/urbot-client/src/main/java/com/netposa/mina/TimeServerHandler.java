@@ -47,7 +47,7 @@ public class TimeServerHandler extends IoHandlerAdapter {
 		Date date = new Date();
 		session.write(date.toString());
 		logger.info("send message:{}",date.toString());
-		session.closeOnFlush();
+		//session.closeOnFlush();
 	}
 
 	@Override
