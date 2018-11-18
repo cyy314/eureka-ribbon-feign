@@ -1,4 +1,4 @@
-package com.netposa.urbotclient.config;
+/*package com.netposa.urbotclient.config;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
@@ -17,7 +17,7 @@ public class InitHttps2 {
 
         connector.setScheme("http");
 
-        connector.setPort(8080);
+        connector.setPort(8762);
 
         connector.setSecure(false);
 
@@ -54,3 +54,4 @@ public class InitHttps2 {
 
 }
 
+*/

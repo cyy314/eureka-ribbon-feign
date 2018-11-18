@@ -4,8 +4,7 @@ Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Administrator
 Implementation-Vendor-Id: com.netposa
 Build-Jdk: 1.8.0_111
-Implementation-URL: http://projects.spring.io/spring-boot/urbot/urbot-
- zuul/
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/urbot/urbot-zuul
 Created-By: Maven Integration for Eclipse
-Implementation-Vendor: Pivotal Software, Inc.
 

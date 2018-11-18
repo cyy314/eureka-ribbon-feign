@@ -11,13 +11,13 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 
 @RestController
-@RequestMapping(value = "rms")
+@RequestMapping(value = "/rms")
 public class LoginController {
 
 	@Autowired
 	private RestTemplate restTemplate;
 
-	@PostMapping(value = "getUserWithDevice", consumes = "application/json")
+	@PostMapping(value = "/userdevice", consumes = "application/json")
 	public String getUserWithDevice() {
 		try {
 			String rs = restTemplate.getForObject("http://urbot-user/user/info", String.class);

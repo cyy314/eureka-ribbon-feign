@@ -6,15 +6,16 @@ import org.apache.tomcat.util.descriptor.web.SecurityCollection;
 import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
-import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
-import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+//import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+//import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
+//import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
+//import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory;
+//import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@EnableEurekaClient
+//@EnableEurekaClient
 public class UrbotUserApplication {
 
 	/*@EnableWebSecurity
@@ -74,7 +75,7 @@ public class UrbotUserApplication {
 	 * 同时支持https和http
 	 * @return
 	 */
-    @Bean
+    /*@Bean
     public EmbeddedServletContainerCustomizer containerCustomizer() {
         return new EmbeddedServletContainerCustomizer() {          
 			@Override
@@ -88,9 +89,10 @@ public class UrbotUserApplication {
                 }
 			}
         };
-    }
+    }*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(UrbotUserApplication.class, args);
+		//new SpringApplicationBuilder(UrbotUserApplication.class).run(args);
 	}
 }
